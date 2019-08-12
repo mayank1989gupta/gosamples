@@ -1,0 +1,6 @@
+Paclage == Project == Workspace
+
+There are 2 types of packages --> 
+Executable[genarated from go build command]  --> This is defined by package name --> 
+    "main" files inside this are trated as executables. This must a func main.
+Re-Usable --> Code dependencies or, libraries
