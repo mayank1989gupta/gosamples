@@ -1,0 +1,15 @@
+Go is refrred as static type language 
+Go is not an object oriented programming language
+
+Package == Project == Workspace
+
+There are 2 types of packages --> 
+Executable[genarated from go build command]  --> This is defined by package name --> 
+    "main" files inside this are trated as executables. This must a func main.
+Re-Usable --> Code dependencies or, libraries
+
+Go Data Structres:
+Arrays --> Fixed length
+Slices  --> It is an array Shrink and grow
+
+Both should be defined wit data type --> collection of objects of same type
