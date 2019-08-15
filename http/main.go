@@ -7,6 +7,8 @@ import (
 	"os"
 )
 
+type logWriter struct{}
+
 func main() {
 	resp, err := http.Get("http://www.google.com")
 
@@ -22,7 +24,14 @@ func main() {
 	resp.Body.Read(bs)
 	//fmt.Println(string(bs)) */
 	fmt.Println("************ Using Helper **********************")
+	//lw := logWriter{}
 	//The same could be achieved by util/helper methods
 	io.Copy(os.Stdout, resp.Body)
+}
 
+//Overridding the Write interface
+func (logWriter) Write(bs []byte) (int, error) {
+	fmt.Println(string(bs))
+	fmt.Println("Just wrote this many bytes:", len(bs))
+	return len(bs), nil
 }

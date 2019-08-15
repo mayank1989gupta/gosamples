@@ -4,3 +4,5 @@ Writer Interface --> takes the bytes of slice and write it outside - So we need 
 
 data --> Reader --> byte slice
 byte slice --> Writer --> output
+
+io.Copy -> implements the write &, reader interfaces.
