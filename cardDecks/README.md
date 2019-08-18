@@ -19,8 +19,9 @@
     4. The "helloworld" file is created which is the executable file build from go 
         To run -> ./helloworld
 
-#Sample Project/Cases for basic Go Land development
-  Includes
+Sample Project/Cases for basic Go Land development
+ 
+    Includes
     1. Creaing new typedef
     2. util functions
     3. working with receiver func 
