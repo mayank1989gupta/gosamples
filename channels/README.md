@@ -17,3 +17,13 @@ Channels
     Channels are the only way we can communicate between "go routines" including communication between 
     Main Routine &, Child Between
     Channels are type specific
+
+    Go Routnine <--> Channel <--> Child Go Routines
+    channel <- 5 // Sends data '5' into the channel
+
+    to reieve the message:
+    myNumber <- channel or, <- channel
+
+Funtion Literal
+
+    Unnamed function to wrap some little chunk of code to be exceuted in some point in future
