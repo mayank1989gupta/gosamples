@@ -1,4 +1,4 @@
-#Working with HTTP Package
+Working with HTTP Package
     
     Sample go file with example to work with HTTP package under net package
     Reader interface --> reads the data into byte slice
